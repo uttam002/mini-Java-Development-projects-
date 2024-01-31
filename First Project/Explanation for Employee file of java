@@ -1,0 +1,112 @@
+## 1. Import Statements:
+import java.sql.*;
+import java.util.Scanner;
+
+- **Explanation:** 
+  - These statements import necessary Java classes for database connectivity (`java.sql.*`) and user input (`java.util.Scanner`).
+
+### 2. Class Declaration:
+public class Employee {
+    // Class implementation
+}
+
+- **Explanation:** 
+  - The `Employee` class encapsulates the functionality of the program.
+
+### 3. Member Variables:
+private static final Scanner scanner = new Scanner(System.in);
+
+- **Explanation:** 
+  - This line declares a `Scanner` object for user input as a static member variable, ensuring only one instance is shared across all instances of the class.
+
+### 4. Method: `showData`
+public static void showData(Statement stmt) {
+    // Method implementation
+}
+
+- **Explanation:** 
+  - This method displays employee data retrieved from the "employee" table in the connected database.
+  - It takes a `Statement` object (`stmt`) as a parameter, representing the database connection.
+
+### 5. Method: `insertData`
+public static void insertData(Statement stmt) {
+    // Method implementation
+}
+
+- **Explanation:** 
+  - This method prompts the user for employee details and inserts a new record into the "employee" table.
+  - It takes a `Statement` object (`stmt`) as a parameter, representing the database connection.
+
+### 6. Method: `deleteData`
+public static void deleteData(Statement stmt) {
+    // Method implementation
+}
+
+- **Explanation:** 
+  - This method prompts the user for an employee ID and deletes the corresponding record from the "employee" table.
+  - It takes a `Statement` object (`stmt`) as a parameter, representing the database connection.
+
+### 7. Method: `updateData`
+public static void updateData(Statement stmt) {
+    // Method implementation
+}
+
+- **Explanation:** 
+  - This method prompts the user for an employee ID, increments it, and updates the corresponding record in the "employee" table.
+  - It takes a `Statement` object (`stmt`) as a parameter, representing the database connection.
+
+### 8. Method: `main`
+public static void main(String[] args) {
+    // Main method implementation
+}
+
+- **Explanation:** 
+  - The `main` method is the entry point of the program.
+  - It prompts the user for database connection details, establishes a connection, creates a `Statement` object, and performs various database operations.
+
+### 9. JDBC Driver Loading:
+Class.forName("com.mysql.cj.jdbc.Driver");
+
+- **Explanation:** 
+  - This line dynamically loads the MySQL JDBC driver (`com.mysql.cj.jdbc.Driver`) into the memory.
+
+### 10. Database Connection:
+Connection con1 = DriverManager.getConnection(url, username, password);
+
+- **Explanation:** 
+  - This line establishes a connection to the MySQL database using the provided URL, username, and password.
+
+### 11. Database Operations:
+// Display existing employee data
+showData(stmt);
+// Insert new employee data
+insertData(stmt);
+// Display updated employee data
+showData(stmt);
+// Delete employee data
+deleteData(stmt);
+// Display updated employee data
+showData(stmt);
+// Update employee data
+updateData(stmt);
+// Display final updated employee data
+showData(stmt);
+
+- **Explanation:** 
+  - These lines execute various database operations, such as displaying, inserting, deleting, and updating employee data.
+
+### 12. Exception Handling:
+} catch (Exception e) {
+    System.out.println(e.getMessage());
+} finally {
+    scanner.close();
+}
+
+- **Explanation:** 
+  - The `catch` block handles any exceptions that might occur during the execution of the program and prints an error message.
+  - The `finally` block ensures that the `Scanner` is closed to prevent resource leaks.
+
+### Conclusion:
+This Java program provides a simple yet functional interface for managing employee data in a MySQL database. 
+It demonstrates the use of JDBC for database connectivity and includes methods for displaying, inserting, deleting, and updating records. 
+The code is organized, and comments provide clarity on the purpose of each section. Additionally, the program handles user input and exceptions gracefully.
