@@ -1,0 +1,15 @@
+/**
+ * Movies Manager Application
+ * 
+ * This Java application allows users to manage a database of movies.
+ * Users can display all movies, insert new movies, delete existing movies, 
+ * and update movie information. It provides a simple command-line interface 
+ * for users to interact with the database.
+ * 
+ * The application connects to a MySQL database named "student" on localhost 
+ * using JDBC. It includes methods to perform CRUD operations on the movies table.
+ * 
+ * @author [Your Name]
+ * @version 1.0
+ * @since [21/02/2024]
+ */
