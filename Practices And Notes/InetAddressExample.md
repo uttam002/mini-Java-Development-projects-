@@ -1,6 +1,5 @@
 ```java
 import java.net.*;
-
 public class InetAddressExample {
     public static void main(String[] args) {
         try {
