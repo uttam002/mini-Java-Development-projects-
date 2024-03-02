@@ -1,7 +1,3 @@
-Certainly! Let's break down the code and explain each part. Additionally, I'll provide examples of a few other methods that can be used with the `InetAddress` class:
-
-### Code Explanation:
-
 ```java
 import java.net.*;
 
@@ -81,7 +77,6 @@ This method retrieves the raw IP address bytes in the form of an array.
 ```java
 byte[] rawAddress = address.getAddress();
 ```
-
 #### `getCanonicalHostName()` Method:
 This method retrieves the fully qualified domain name (FQDN) for the IP address.
 
