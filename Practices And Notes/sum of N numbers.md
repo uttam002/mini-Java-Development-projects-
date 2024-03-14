@@ -1,3 +1,5 @@
+***Write a client-server program using TCP/UDP socket. Client send list of N numbers to server and server respond the sum of N numbers.***
+
 **Step 1:** Copy the server code into a file named `TCPServer.java`.
 
 **Step 2:** Copy the client code into a file named `TCPClient.java`.
